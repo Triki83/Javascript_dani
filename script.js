@@ -29,3 +29,11 @@ if (danas === 6 || danas === 7) {
     console.log("Ovo je radni dan.");
 }
 
+if (danas === 1) {
+    console.log("Ja najviše volim JS od svih programskih jezika");
+} else if (danas === 4) {
+    console.log("Mali petak!");
+} else if (danas === 5) {
+    console.log("Vikend na Vidiku!");
+}
+
