@@ -37,3 +37,33 @@ if (danas === 1) {
     console.log("Vikend na Vidiku!");
 }
 
+
+const unos = prompt("Unesi broj dana od 1 do 17:");
+const broj = Number(unos);
+
+
+if (broj >= 1 && broj <= 17 && Number.isInteger(broj)) {
+    const indeks = (broj - 1) % 7;
+    const dan = dani[indeks];
+
+    console.log("Naziv dana:", dan);
+
+    if (indeks === 5 || indeks === 6) {
+        console.log("Ovo je neradni dan.");
+    } else {
+        console.log("Ovo je radni dan.");
+    }
+
+    if (dan === "Ponedjeljak") {
+        console.log("Ja najviše volim JS od svih programskih jezika");
+    } else if (dan === "Četvrtak") {
+        console.log("Mali petak!");
+    } else if (dan === "Petak") {
+        console.log("Vikend na Vidiku!");
+    }
+} else {
+    console.log("Pogreška: unesi cijeli broj od 1 do 17.");
+}
+
+
+
