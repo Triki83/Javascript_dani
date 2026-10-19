@@ -23,3 +23,9 @@ const danas = brojDana === 0 ? 7 : brojDana;
 
 console.log("Danas je " + dani[danas - 1] + ".");
 
+if (danas === 6 || danas === 7) {
+    console.log("Ovo je neradni dan.");
+} else {
+    console.log("Ovo je radni dan.");
+}
+
